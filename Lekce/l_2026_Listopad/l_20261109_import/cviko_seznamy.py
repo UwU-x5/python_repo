@@ -38,11 +38,12 @@ def vypocet_obvodu_obdelniku(delka, sirka = None):
     if sirka is None:
         sirka = delka
     return 2 * (delka + sirka)
-input_delka = input("Zadejte delku obdelniku: ")
-input_sirka = input("Zadejte sirku obdelniku (nepovinne): ")
-f_delka = float(input_delka)
-if input_sirka:
-    f_sirka = float(input_sirka)
-else:
-    f_sirka = None
-print(f"Obvod obdelniku: {vypocet_obvodu_obdelniku(f_delka, f_sirka)}")
+delka = 5
+sirka = 10
+
+print(f"Obvod obdelniku: {vypocet_obvodu_obdelniku(delka, sirka)}")
+
+odmocnina = math.sqrt(256)
+print(f"Odmocnina z 256 je: {odmocnina}")
+
+print(dir(math))
